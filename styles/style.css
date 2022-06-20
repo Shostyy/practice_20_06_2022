@@ -14,6 +14,7 @@ body {
     width: 946px;
     margin: 0 auto;
 }
+/*navigation*/
 .navigation__list {
     width: 946px;
     display: flex;
@@ -34,7 +35,31 @@ body {
 .navigation__item{
     list-style-type: none;
 }
-
+/*Header*/
+.header__about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 188px;
+}
+.header__name {
+    font-size: 48px;
+    font-weight: 700;
+}
+.header__bio {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+.header__lang {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #828282;
+    transform: rotate(-90deg);
+    padding-top: 70px;
+}
+/*Main*/
 .main {
     flex: 1 1 auto;
 }
