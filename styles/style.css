@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Quicksand:wght@700&display=swap');
+
+body {
+    font-family: 'Khula', sans-serif;
+    min-height: 100vh;
+}
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+.container {
+    width: 946px;
+    margin: 0 auto;
+}
+.navigation__list {
+    width: 946px;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.4);
+}
+.navigation__link {
+    text-decoration: none;
+    color: #828282;
+    font-size: 18px;
+    font-weight: 600;
+}
+.navigation__link:hover, .navigation__link_active {
+    color: #000;
+}
+.navigation__item{
+    list-style-type: none;
+}
+
+.main {
+    flex: 1 1 auto;
+}
