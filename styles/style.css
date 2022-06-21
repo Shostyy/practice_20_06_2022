@@ -70,28 +70,80 @@ body {
     margin-bottom: 104px;
 }
 /*Main*/
-.main {
-    flex: 1 1 auto;
+.main_white-bg{
     width: 100%;
     background-color: #fff;
 }
-.main__container{
+.main__container {
+    flex: 1 1 auto;
+    width: 100%;
+}
+.main__container, .main__skills{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.main__about-header {
+.main__about-header,  .skills__head{
     margin: 60px 0;
     font-size: 40px;
     font-weight: bold;
 }
-.main__about p {
+.main__about p,  .skills__description{
     text-align: center;
     margin-bottom: 60px;
     font-size: 22px;
     font-weight: 600;
 }
+/*main skills*/
+.skills__details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 110px;
+}
+.skills__item {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.skills-program {
+    width: 89px;
+    height: 89px;
+    margin-bottom: 25px;
+}
+.skills-program-name {
+    text-align: center;
+    color: #828282;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.skills__rating_3:before {
+    width: 130px;
+    display: block;
+    font-size: 30px;
+    letter-spacing: 3px;
+    content: '★★★';
+}
+.skills__rating_4:before {
+    width: 130px;
+    display: block;
+    font-size: 30px;
+    letter-spacing: 3px;
+    content: '★★★★';
+}
+.skills__rating_5:before {
+    width: 130px;
+    display: block;
+    letter-spacing: 3px;
+    font-size: 30px;
+    content: '★★★★★';
+}
+
+
 
 @media (max-width: 767px){
     body {
@@ -223,4 +275,10 @@ body {
         font-size: 26px;
         font-weight: 600;
     }
+}
+
+
+/*delete this*/
+footer {
+    height: 500px;
 }
