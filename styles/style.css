@@ -1,22 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Quicksand:wght@700&display=swap');
-
+    @import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Quicksand:wght@700&display=swap');
 body {
     font-family: 'Khula', sans-serif;
     min-height: 100vh;
 }
+
 .wrapper {
     min-height: 100vh;
     display: flex;
-
     flex-direction: column;
     align-items: space-between;
     background-color: #E5E5E5;
 }
+
 .container {
     width: 946px;
     margin: 0 auto;
 }
+
+
 /*navigation*/
+
 .navigation__list {
     width: 946px;
     display: flex;
@@ -25,95 +28,128 @@ body {
     align-items: center;
     border-bottom: 2px solid black;
 }
+
 .navigation__link {
     text-decoration: none;
     color: #828282;
     font-size: 18px;
     font-weight: 600;
 }
-.navigation__link:hover, .navigation__link_active {
+
+.navigation__link:hover,
+.navigation__link_active {
     color: #000;
 }
-.navigation__item{
+
+.navigation__item {
     list-style-type: none;
 }
+
+
 /*Header*/
+
 .header__about {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 188px;
 }
+
 .header__name {
     font-size: 48px;
     font-weight: 700;
 }
+
 .header__bio {
     font-size: 18px;
     font-weight: 600;
     margin-top: 50px;
 }
+
 .header__lang {
     font-size: 18px;
     font-weight: bold;
     transform: rotate(-90deg);
     padding-top: 65px;
 }
+
 .header__lang__item {
     text-decoration: none;
     color: #828282;
 }
-.header__lang_active, .header__lang > a:hover {
+
+.header__lang_active,
+.header__lang>a:hover {
     color: #000;
 }
+
 .header__image {
     margin-bottom: 104px;
 }
+
+
 /*Main*/
-.main_white-bg{
+
+.main_white-bg {
     width: 100%;
     background-color: #fff;
 }
+
 .main__container {
     flex: 1 1 auto;
     width: 100%;
 }
-.main__container, .main__skills{
+
+.main__container,
+.main__skills {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.main__about-header,  .skills__head{
+
+.main__about-header {
+    text-align: center;
+}
+
+.main__about-header,
+.skills__head {
     margin: 60px 0;
     font-size: 40px;
     font-weight: bold;
 }
-.main__about p,  .skills__description{
+
+.main__about p,
+.skills__description {
     text-align: center;
     margin-bottom: 60px;
     font-size: 22px;
     font-weight: 600;
 }
+
+
 /*main skills*/
-.skills__details{
+
+.skills__details {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding-bottom: 110px;
 }
+
 .skills__item {
     width: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
+
 .skills-program {
     width: 89px;
     height: 89px;
     margin-bottom: 25px;
 }
+
 .skills-program-name {
     text-align: center;
     color: #828282;
@@ -121,6 +157,7 @@ body {
     font-weight: 600;
     margin-bottom: 30px;
 }
+
 .skills__rating_3:before {
     width: 130px;
     display: block;
@@ -128,6 +165,7 @@ body {
     letter-spacing: 3px;
     content: '★★★';
 }
+
 .skills__rating_4:before {
     width: 130px;
     display: block;
@@ -135,6 +173,7 @@ body {
     letter-spacing: 3px;
     content: '★★★★';
 }
+
 .skills__rating_5:before {
     width: 130px;
     display: block;
@@ -144,8 +183,47 @@ body {
 }
 
 
+/*main portfolio*/
 
-@media (max-width: 767px){
+.main_ligth-bg {
+    width: 100%;
+    background-color: #F6F6F6;
+}
+
+.portfolio {
+    padding-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio__head {
+    color: black;
+    font-size: 34px;
+    margin-bottom: 50px;
+}
+
+.portfolio__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    padding-bottom: 95px;
+    flex: 0 0 936px;
+}
+
+.portfolio__link {
+    color: black;
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+}
+
+.portfolio__image {
+    margin-bottom: 45px;
+}
+
+@media (max-width: 767px) {
     body {
         font-size: 30px;
     }
@@ -161,7 +239,7 @@ body {
     .header__image {
         margin-bottom: 30px;
     }
-    .navigation{
+    .navigation {
         z-index: 2;
         position: absolute;
         width: 100%;
@@ -175,7 +253,7 @@ body {
         border-bottom: none;
         padding-top: 100px;
     }
-    .burger:before{
+    .burger:before {
         position: absolute;
         content: '';
         top: 0;
@@ -208,7 +286,8 @@ body {
         background-color: black;
         transition: 0.3s;
     }
-    .burger:before, .burger:after {
+    .burger:before,
+    .burger:after {
         width: 100%;
         height: 2px;
         content: '';
@@ -216,21 +295,19 @@ body {
         background-color: black;
         transition: 0.3s;
     }
-    .burger:before{
+    .burger:before {
         top: 15px;
     }
-    .burger:after{
+    .burger:after {
         bottom: 0;
     }
-
-
     .container {
         width: 100%;
     }
     .navigation__list {
         width: 100%;
     }
-    .navigation{ 
+    .navigation {
         width: 100%;
     }
     .header {
@@ -239,24 +316,25 @@ body {
     .header img {
         width: 100%;
     }
-    .navigation.active{
+    .navigation.active {
         position: absolute;
         top: 0;
         transition: 0.3s;
     }
-    .burger.active:before, .burger.active:after {
+    .burger.active:before,
+    .burger.active:after {
         width: 100%;
         height: 2px;
         content: '';
         position: absolute;
         background-color: black;
     }
-    .burger.active:before{
+    .burger.active:before {
         transform: rotate(45deg);
         top: 10px;
         transition: 0.3s;
     }
-    .burger.active:after{
+    .burger.active:after {
         transform: rotate(-45deg);
         top: 10px;
         transition: 0.3s;
@@ -270,6 +348,7 @@ body {
     /*Main responsive*/
     .main__container {
         padding: 0px 15px;
+        box-sizing: border-box;
     }
     .main__about p {
         text-align: center;
@@ -278,14 +357,14 @@ body {
         font-weight: 600;
     }
     /*skills program responsive*/
-    .skills__details{
+    .skills__details {
         flex-direction: column;
-        align-items: center; 
-    } 
-    .skills__description{
+        align-items: center;
+    }
+    .skills__description {
         margin-bottom: 30px;
     }
-    .skills-program-name{
+    .skills-program-name {
         margin-bottom: 10px;
     }
     .skills__rating {
@@ -294,10 +373,7 @@ body {
     .skills__details {
         padding-bottom: 50px;
     }
-}
-
-
-/*delete this*/
-footer {
-    height: 500px;
-}
+    /*delete this*/
+    footer {
+        height: 500px;
+    }
