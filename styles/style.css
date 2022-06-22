@@ -278,13 +278,21 @@ body {
         display: block;
     }
     .header__bio {
-        font-size: 30px;
+        font-size: 25px;
+    }
+    .header__name {
+        margin-right: 50px;
     }
     .header__lang {
         padding-left: 40px;
     }
     .header__image {
         margin-bottom: 30px;
+    }
+    .header__about {
+        padding: 0 20px;
+        justify-content: space-between;
+        box-sizing: border-box;
     }
     .navigation {
         z-index: 2;
@@ -445,7 +453,7 @@ body {
     .footer {
         width: 100%;
         padding-top: 82px;
-        margin-bottom: 90px;
+        margin-bottom: 50px;
     }
     .footer__contacts {
         margin-bottom: 27px;
@@ -459,7 +467,6 @@ body {
     }
     .footer__send-message {
         min-width: 316px;
-        margin-bottom: 48px;
     }
     .footer__social-media {
         width: 100%;
