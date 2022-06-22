@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Quicksand:wght@700&display=swap');
 body {
     font-family: 'Khula', sans-serif;
     min-height: 100vh;
@@ -373,7 +373,32 @@ body {
     .skills__details {
         padding-bottom: 50px;
     }
-    /*delete this*/
-    footer {
-        height: 500px;
+    /*main portfolio responsive*/
+    .portfolio {
+        padding: 50px 0;
     }
+    .portfolio__head {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .portfolio__item {
+        margin-bottom: 40px;
+        padding: 0 20px;
+        flex: 0 0 100%;
+        box-sizing: border-box;
+    }
+    .portfolio__link {
+        font-size: 18px;
+    }
+    .portfolio__image {
+        margin-bottom: 45px;
+        width: 100%;
+    }
+}
+
+
+/*delete this*/
+
+footer {
+    height: 500px;
+}
