@@ -230,6 +230,7 @@ body {
     align-items: center;
     width: 100%;
     padding-top: 115px;
+    padding-bottom: 30px;
 }
 
 .footer__contacts {
@@ -254,7 +255,20 @@ body {
     margin-bottom: 90px;
 }
 
-.footer__social-media {}
+.footer__social-media {
+    display: flex;
+    width: 345px;
+    height: 41px;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.footer__social-media-description {
+    font-size: 14px;
+    color: #828282;
+    text-align: center;
+    font-weight: 600;
+}
 
 @media (max-width: 767px) {
     body {
