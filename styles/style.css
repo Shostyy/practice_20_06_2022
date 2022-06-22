@@ -441,4 +441,29 @@ body {
         margin-bottom: 45px;
         width: 100%;
     }
+    /*footer*/
+    .footer {
+        width: 100%;
+        padding-top: 82px;
+        margin-bottom: 90px;
+    }
+    .footer__contacts {
+        margin-bottom: 27px;
+    }
+    .footer__send-message {
+        font-size: 18px;
+    }
+    .footer__message {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .footer__send-message {
+        min-width: 316px;
+        margin-bottom: 48px;
+    }
+    .footer__social-media {
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 45px;
+    }
 }
